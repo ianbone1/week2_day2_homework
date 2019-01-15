@@ -12,7 +12,7 @@ class River
   end
 
   def add_fish(fish)
-    @fish_population << fish
+    @fish_population << fish if fish.class.to_s == "Fish"
   end
 
   def remove_fish()

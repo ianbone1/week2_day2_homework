@@ -15,7 +15,7 @@ class Bear
   def eats_fish_from_river(river)
     if river.fish_count > 0
       the_poor_fish = river.remove_fish
-      @fish_eaten << the_poor_fish
+      @fish_eaten << the_poor_fish if thePoor_fish.class.to_s == "Fish"
     end
   end
 
